@@ -69,13 +69,14 @@ console.log(sum);
 function dataType(){
 	var args = Array.prototype.slice.call(arguments); //change arguments to array
 	for (var i=0;i<arguments.length;i++){
-		console.log(typeof args[i]);
+		if ( Array.isArray(args[i])) {
+			args[i]="array";
+		}else
+		args[i]=(typeof args[i]);
 	}
-}
-
-dataType (1, 6.2831, "pi*2", [function(){}, 1], {}, function () {});
-
-
+		var str = args.join(', ');
+		console.log(str);
+} 
 
 /* Exercise 5 */
 function distance(){
