@@ -11,59 +11,60 @@ console.log(sum);
 //Private variable
 //Get method that allow access to private variable
 // create and access local variables.
-// function store(value){
-// 	var x=value;
-// //	return "value stored";
-// function getter(){
-// 	return x;
-// }
-// function setter(value){
-// 	x=value;
+function store(value) {
+    var x;
+    setter(value);
+    // //	return "value stored";
+    function getter() {
+        return x;
+    }
 
-// }
-// //return setter;
-// //return getter;
-// return {getFn:getter,
-// 		setFn:setter
-//      	}
-// }
+    function setter(value) {
+        if (!isNaN(value)) {
+            x = value;
+            return x;
+        } else
+            return "not a valid input";
+    }
 
+    return {
+        getFn: getter,
+        setFn: setter
+    };
 
-// var storeVal=store(5);
-// console.log(storeVal);
-// storeVal();
-// console.log(x)
-// console.log(storeVal)
-// console.log(storeVal.getFn());
-// console.log(storeVal.setFn(12));
-
-// // to return more than one thing in function we use object
-// var storeA=store(5);
-// console.log
+}
 
 
-// function Store (value){
-// 	var x=value;
-// 	this.getFn=function(){
-// 		return x;
-// 	}
-// 	this.setFn=function(value){
-// 		x=value;
-// 		return x;
-// 	}
-// }
-// var storeA=new Store(5);
-// // we don't want to return in constructor because every time we return we create but we want to have a shared peoperties.
 
-// function Store (value){
-// 	this.x=value;
-// }
-// Store.prototype.getFn=function(value){
-// 	this.x=value;
-// 	return this.x;
-// }
-//  //no access to x
+var storeVal = store(5);
+console.log(storeVal);
+console.log(storeVal.getFn());
+console.log(storeVal.setFn("string"));
 
+
+
+/*Exercise 4*/
+//This will use Anish method and it will write it in a row.
+
+function dataType() {
+    var args = [];
+    for (var i = 0; i < arguments.length; i++) {
+        if (Array.isArray(arguments[i])) {
+            //			console.log("array");
+            args[i] = "array";
+        } else if (!isNaN(arguments[i]) && !Number.isInteger(arguments[i])) {
+            //		 	console.log("float");
+            args[i] = "float";
+        } else {
+            //			console.log(typeof(arguments[i]));
+            args[i] = typeof(arguments[i]);
+        }
+    }
+    var str = args.join(', ');
+    console.log(str);
+}
+
+dataType(1, 6.2831, "pi*2", [function() {}, 1], {}, function() {});
 
 /*Exercise 4 */
 function dataType() {
