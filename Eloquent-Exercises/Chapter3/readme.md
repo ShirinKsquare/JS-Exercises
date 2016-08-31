@@ -27,14 +27,12 @@
 	 		return isEven(N-2);
 	 	}
 	 }
-	 ```
-	 output:
+	  output:
 	// console.log(isEven(50));
 	// console.log(isEven(75));
 	// console.log(isEven(-1));
-// if (character == character.toUpperCase()) {
-//             alert ('upper case true');
-//         }
+```
+	
 
  Chapter3 Exercise3 
  ```javascript
@@ -50,11 +48,11 @@
 
  	    return num;
  	}
-``` output:
+ output:
 // console.log(countBs("BBC"),num);
+```
 
  Chapter3 Exercise3 part2 
-
 ```javascript
 	 function countChar(kalame,chr){
 
@@ -66,8 +64,9 @@
 	 		}
 	 		return num;
 	 	}
+	 	output:	// 	console.log(countChar("kakkerlack","k"))
 	 	```
-	// 	console.log(countChar("kakkerlack","k"))
+
 ```javascript
 			 function Fibo(N){
 			 var result =[];
