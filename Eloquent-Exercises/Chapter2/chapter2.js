@@ -1,6 +1,6 @@
- <a href= "https://repl.it/CpE0/204"> here </a>
+
  Chapter2 Exercise1 
-``` Javascript
+``` 
  var PoundCount=1;
  var count=0;
  var result= "";
@@ -17,7 +17,7 @@
 
  Chapter 2 Exercise2 Version1
 
-'''
+```
    var count=1;
  for (count=1;count<101;count+=1){
  	if (count%3==0){
