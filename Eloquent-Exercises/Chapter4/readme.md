@@ -61,57 +61,60 @@ output:
    }
    output:
 	//  console.log(reverseArrayInPlace([1,2,3,4,5]))
-```
+
 	// note: the first one is used in more situations because we keep both arrays.
 	// but, the second one is more efficient.
 
-
-/* Exercise3 Chapter4 */
-// function arrayToList(array){
-// 	var list={};
-// 	var pointer=list;
-// 	 	for (var i=0; i<array.length;i++){
-// 		pointer.value=array[i]
-// 		pointer.rest={};
-// 		if(i==(array.length-1))
-// 			pointer.rest=null;
-// 		else
-// 			pointer=pointer.rest;
-// 	}
-// 	pointer=null;
-// 	return list;
-// }
-
+```
+ Exercise3 Chapter4 
+ ```javascript
+ function arrayToList(array){
+ 	var list={};
+ 	var pointer=list;
+ 	 	for (var i=0; i<array.length;i++){
+ 		pointer.value=array[i]
+ 		pointer.rest={};
+ 		if(i==(array.length-1))
+ 			pointer.rest=null;
+ 		else
+ 			pointer=pointer.rest;
+ 	}
+ 	pointer=null;
+ 	return list;
+ }
+output:
 // 	 console.log (arrayToList([10,20]));
-
-// /* Exercise3 Chapter4 Part2 */
-// function listToArray(list){
-// 		var array=[];
-// 		var i=0;
-// 		for (var node = list; node; node = node.rest) {
-// 			console.log(node)
-// 		  array[i]=node.value;
-// 		  i++;
-// 		}
-// 		return array;
-// }
-// console.log(listToArray(arrayToList([10, 20, 30])))
-
-/* Exercise3 Chapter4 part 3 */
-// function prepend(list,element){
-// 	if (element==null){
-// 		var lst={};
-// 		lst.value=list;
-// 		lst.rest=null;
-// 		list=lst;
-// 		// return lst;
-// 	}
-// 	else{
-// 		list.rest=element;
-// 		// return list;
-// 	}
-// 	return list;
-// }
+```
+  Exercise3 Chapter4 Part2 
+ ```javascript 
+ function listToArray(list){
+ 		var array=[];
+ 		var i=0;
+ 		for (var node = list; node; node = node.rest) {
+ 			console.log(node)
+ 		  array[i]=node.value;
+ 		  i++;
+ 		}
+ 		return array;
+ }
+output: // console.log(listToArray(arrayToList([10, 20, 30])))
+```
+ Exercise3 Chapter4 part 3 
+ ```javascript
+ function prepend(list,element){
+ 	if (element==null){
+ 		var lst={};
+ 		lst.value=list;
+ 		lst.rest=null;
+ 		list=lst;
+ 		// return lst;
+ 	}
+ 	else{
+ 		list.rest=element;
+ 		// return list;
+ 	}
+ 	return list;
+ }
 // this works
 	function prepend(element,list){
 		 if(list==null){
@@ -127,14 +130,16 @@ output:
 		 }
 	}
 
-
+output:
 	// var listNew={
 	// 	value:1,
 	// 	res:null
 	// }
  //console.log(prepend(listNew,{value:5,res:null}));
 // console.log(prepend(20,null));
- console.log(prepend(10, prepend(20, null)));
+ //console.log(prepend(10, prepend(20, null)));
+ ```
+ ```javascript
  var list = {
   value: 1,
   rest: {
@@ -185,7 +190,8 @@ output:
 	// 	b:"3"
 	// }
 
-
+```
+```javascript
 
 	// 	function deepComparation(objA,objB){
 	// 	for (var key in objA){
