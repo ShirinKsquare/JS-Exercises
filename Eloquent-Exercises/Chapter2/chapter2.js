@@ -1,33 +1,35 @@
-/* Chapter2 Exercise1 */
-// var PoundCount=1;
-// var count=0;
-// var result= "";
-// for(count=0;count<7;count+=1){
-// 	for(PoundCount=1;PoundCount<=count+1;PoundCount+=1){
-// 		result+="#"
-// 	}
-// 	console.log(result);
-// 	console.log("\n");
-// 	PoundCount=1;
-// 	result="";
-// }
+ Chapter2 Exercise1 
+``` Javascript
+ var PoundCount=1;
+ var count=0;
+ var result= "";
+ for(count=0;count<7;count+=1){
+ 	for(PoundCount=1;PoundCount<=count+1;PoundCount+=1){
+ 		result+="#"
+ 	}
+ 	console.log(result);
+ 	console.log("\n");
+ 	PoundCount=1;
+ 	result="";
+ }
+```
 
+ Chapter 2 Exercise2 Version1
 
-/* Chapter 2 Exercise2 Version1*/
-
-// var count=1;
-// for (count=1;count<101;count+=1){
-// 	if (count%3==0){
-// 		console.log("fizz")
-// 	}
-// 	else if(count%5==0 && !count%3==0){
-// 		console.log("buzz")
-// 	}
-// 	else{
-// 		console.log(count)
-// 	}
-// }
-
+'''
+   var count=1;
+ for (count=1;count<101;count+=1){
+ 	if (count%3==0){
+ 		console.log("fizz")
+ 	}
+ 	else if(count%5==0 && !count%3==0){
+ 		console.log("buzz")
+ 	}
+ 	else{
+ 		console.log(count)
+ 	}
+ }
+```
 
 /* Chapter2 Exercise2 Version2*/
 // var count=1;
