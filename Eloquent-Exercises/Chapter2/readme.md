@@ -1,7 +1,9 @@
-
+ 
+ <a href="https://repl.it/DFsO"> here </a>
+ 
  Chapter2 Exercise1 
 
-``` 
+```javascript 
  var PoundCount=1;
  var count=0;
  var result= "";
@@ -58,7 +60,6 @@
  var count2=1;
  var sum=0;
  var result=""
-
  for (count1=1;count1<9;count1+=1){
  	for (count2=1; count2<9;count2+=1){
  		sum=count1+count2;
