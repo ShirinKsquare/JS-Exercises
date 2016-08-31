@@ -65,7 +65,7 @@
 	 		return num;
 	 	}
 	 	output:	// 	console.log(countChar("kakkerlack","k"))
-	 	```
+```
 
 ```javascript
 			 function Fibo(N){
