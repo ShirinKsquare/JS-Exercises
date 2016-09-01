@@ -11,6 +11,13 @@
 ```
 ```javascript
  	function mult(x,y){
+ 	  return (x*y).toString(13);
+ 	}
+output:
+// console.log(mult(6,8));
+```
+```javascript
+ 	function mult(x,y){
  	  var array=[];
  	  var i=0;
  	  var result=x*y;
