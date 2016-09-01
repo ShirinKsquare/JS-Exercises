@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>bildup table with dom structure</title>
+
+    <style media="screen">
+
+    </style>
+
+    <script type="text/javascript">
+    window.onload=function(){ //run function inside after page and its elements are loaded
+      function buildup(array){
+        //lets create a table node
+        var node=document.createElement('p');
+        var root=document.getElementById('root');//we created div by an id 'root' in html
+        // and then connect the node p to it. but if div was not there we had to
+        // go in create node for body, html and connect them all
+        root.appendChild(node);
+        for (var i=0;i<array.length;i++){
+          var child=array[i];
+            if(typeof child=="string"){
+  //            console.log(array[i])
+              var child=document.createTextNode(array[i]);
+              node.appendChild(child);
+           }
+        }
+
+      }
+      buildup(['one','two','three'])
+    }
+    </script>
+  </head>
+
+
+  <body>
+    <div id="root">
+    <p>To test the DOM</p>
+  </div>
+
+  </body>
+</html>
