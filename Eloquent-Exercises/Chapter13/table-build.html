@@ -6,7 +6,12 @@
     <title>bildup table with dom structure</title>
 
     <style media="screen">
-
+      td,tr{
+        border: 1px solid black;
+      }
+      cell{
+        text-align: right;
+      }
     </style>
 
     <script type="text/javascript">
@@ -34,6 +39,7 @@
                         var cell = document.createTextNode(array[i][key]);
                         td.appendChild(cell);
                         tr.appendChild(td);
+
                     }
                     thead.appendChild(tr)
                 }
