@@ -1,3 +1,5 @@
+/* Exercise 1 */
+
 function hextorgb(hex){
 
 
