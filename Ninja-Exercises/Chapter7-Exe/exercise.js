@@ -71,4 +71,15 @@ function gregorian_to_jalali(USDate){
 gregorian_to_jalali("09/16/2014");
 // the year is not working
 
-
+/* Exercise 3 */
+i. xabc
+ii. a!!1111 or ab!!1111
+iii. fzfa6b
+iv. 'wide'
+v.  ' '   a single space
+vi.  92  
+vii. @   any character except new line
+viii. caz7
+ix. abc
+x. a_Z@A$9.com
+xi. n_0
