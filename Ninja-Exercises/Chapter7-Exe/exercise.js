@@ -33,11 +33,19 @@ hextorgb("3322ff");
 
 
 /* Exercise2 */
+function div(a,b){
+	return ~~(a/b);
+}
+function mod(a,b){
+	return a-~~(a/b)*b;
+}
+
 function gregorian_to_jalali(USDate){
   var result = /(\d{1,2})\/(\d{1,2})\/(\d{4})/.exec(USDate);
   var gm = result[1];
   var gd = result[2];
   var gy = result[3];
+  var i,j;
  g_d_m=[0,31,59,90,120,151,181,212,243,273,304,334];
  jy=(gy<=1600)?0:979;
  gy-=(gy<=1600)?621:1600;
@@ -49,6 +57,10 @@ function gregorian_to_jalali(USDate){
  jy+=4*(parseInt(days/1461));
  days%=1461;
  jy+=parseInt((days-1)/365);
+ //j=4*jy+139361631;
+ //j=j+div(div(4*jy+183187720,146097)*3,4)*4-3908;
+ //i=div(mod(j,1461),4)*5+308;
+ //jy=div(j,1461)-100100+div(8-gm,6);
  if(days > 365)days=(days-1)%365;
  jm=(days < 186)?1+parseInt(days/31):7+parseInt((days-186)/30);
  jd=1+((days < 186)?(days%31):((days-186)%30));
@@ -57,4 +69,6 @@ function gregorian_to_jalali(USDate){
 
 
 gregorian_to_jalali("09/16/2014");
-// the year is nt working
+// the year is not working
+
+
