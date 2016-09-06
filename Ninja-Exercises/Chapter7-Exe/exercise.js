@@ -83,3 +83,11 @@ viii. caz7
 ix. abc
 x. a_Z@A$9.com
 xi. n_0
+ /* Exercise 4 */
+ 1.
+ 2. /\d*([a-zA-Z])\d*/g
+ 3./^([a-zA-Z]+)\.(txt)|(java)|(cpp)$/.
+ 4.
+ 5. /[b-y]*/
+ 6.
+ 
